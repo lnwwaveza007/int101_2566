@@ -72,7 +72,9 @@ public class Account {
 
     @Override
     public String toString() {
-        return "Account("+ no + "," + balance + ')';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Account(").append(no).append(",").append(balance).append(')');
+        return sb.toString();
     }
 
     @Override
